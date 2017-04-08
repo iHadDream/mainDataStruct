@@ -94,7 +94,7 @@ var tree = new BinarySearchTree();
 
 >tree.remove(key); 移除一个树节点
 
-#Sort|Search#
+#Sort#
 
 var array =new ArrayList();  
 
