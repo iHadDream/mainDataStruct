@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="mainDataStruct.js"></script>
+	<script>	
+		/*//stack栈的使用
+		var stack = new Stack(); 
+		console.log(stack.isEmpty()); //输出为true 
+		stack.push(5); 
+		stack.push(8); 
+		console.log(stack.peek());
+		//stack example  十进制数转换为二进制数
+		function divideBy2(Tnumber){
+			var item=new Stack(),BinaryNum=[];
+			while(Tnumber>0){
+				item.push(Math.floor(Tnumber%2));
+				Tnumber=Math.floor(Tnumber/2);
+			}
+			while(!item.isEmpty()){
+				BinaryNum+=item.pop();
+			}
+			
+			return BinaryNum;
+		}
+		console.log(divideBy2(233));//11101001
+		//封装成十进制转换任何进制
+		function divide(Tnumber,i){
+			var item=new Stack(),iNum=[];
+			while(Tnumber>0){
+				item.push(Math.floor(Tnumber%i));
+				Tnumber=Math.floor(Tnumber/i);
+			}
+			while(!item.isEmpty()){
+				iNum+=item.pop().toString();
+			}
+			return iNum;
+		}
+		console.log(divide(233,16));//149
+
+
+		//队列的使用
+		var queue = new Queue(); 
+		console.log(queue.isEmpty()); //输出true 
+		//接下来，添加一些元素（添加"John"和"Jack"两个元素——你可以向队列添加任何类型的
+		//元素）： 
+		queue.enqueue("John"); 
+		queue.enqueue("Jack"); 
+		//添加另一个元素： 
+		queue.enqueue("Camila"); 
+		//再执行一些其他的命令： 
+		queue.print(); 
+		console.log(queue.size()); //输出3 
+		console.log(queue.isEmpty()); //输出false 
+		queue.dequeue(); 
+		queue.dequeue(); 
+		queue.print(); */
+
+		//sort
+		function createNonSortedArray(size){ //{6} 
+			 var array = new ArrayList(); 
+			 for (var i = size; i> 0; i--){ 
+			 	array.insert(i); 
+			 } 
+			 return array; 
+		} 
+ 
+		var array = createNonSortedArray(5); //{7} 
+		console.log(array.toString()); //{8} 
+		array.quickSort(array,0,array.length-1);
+		console.log(array.toString());
+		
+		
+
+	</script>
+</body>
+</html>
