@@ -583,3 +583,4 @@ function fibonacci(num){
 	}
 	return fibonacci(num-1)+fibonacci(num-2);
 }
+//Dynamic Programming 分解成相互依赖的子问题---硬币找零
